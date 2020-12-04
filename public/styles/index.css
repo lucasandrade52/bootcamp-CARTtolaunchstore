@@ -1,14 +1,12 @@
 :root {
     --primary-color: #fd951f;
     --secondary-color: #1f83fd;
-
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     text-decoration: none;
     list-style-type: none;
     border: none;
@@ -20,7 +18,6 @@ html,body {
 
 body {
     font-family: 'Roboto', sans-serif;
-
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
@@ -39,24 +36,19 @@ footer {
 .button {
     background-color: var(--primary-color);
     color: white;
-    
     display: block;
     margin: 16px 0;
     padding: 12px 16px;
-
     width: 100%;
     border-radius: 4px;
 
     /* para colocar o botao para baixo */
     align-self: end;
-
     font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
     text-align: center;
-
     cursor: pointer;
-
     transition: all 0.2s;
 }
 
@@ -85,10 +77,8 @@ footer {
 header, footer {
     background-color: black;
     color: white;
-
     width: 100%;
     padding: 32px 0;
-
     text-align: center;
 }
 
@@ -134,11 +124,8 @@ nav.primary > ul {
 nav.primary > ul > li > a {
     display:flex;
     align-items: center;
-
     height: 48px;
-
     color: white;
-
     transition: 200ms;
 }
 
@@ -153,14 +140,11 @@ nav.primary > ul > li > a > i{
 /* PRODUCTS FORM */
 section.form {
     background-color: white;
-
     padding: 32px 24px;
     margin: 32px auto;
-
     box-shadow: 2px 2px 2px -4px rgba(60, 60, 60, .9);
     border: 1px solid #efefef;
     border-radius: 4px;
-
     max-width: 700px;
     width: 90%;
 }
@@ -170,13 +154,10 @@ section.form .header h3 {
     line-height: 24px;
     letter-spacing: 0.7px;
     text-transform: uppercase;
-
     font-weight: bold;
     color: var(--primary-color);
-
     margin-bottom: 16px;
 }
-
 
 form .fields {
     margin-bottom: 64px;
@@ -191,7 +172,6 @@ form .item > div:nth-child(1) {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
-
     margin-bottom: 8px;
 }
 
@@ -201,14 +181,10 @@ form .item input[type="number"],
 form .item textarea,
 form .item select {
     width: 100%;
-
     padding: 8px 16px;
-
     box-shadow: 2px 2px 2px -4px rgba(63,63,63,.9);
-
     border: 1px solid #efefef;
     border-radius: 4px;
-
     font-size: 16px;
 }
 
@@ -217,7 +193,6 @@ form .item select {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-
     /* trazer de volta o icone lateral */
     background-color: #fff;
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
@@ -230,7 +205,6 @@ form .item select {
 form .item textarea {
     min-height: 150px;
 }
-
 
 form .item span {
     padding: 8px 16px;
@@ -248,10 +222,8 @@ form .item span {
 /* PHOTOS UPLOAD */
 form .item #photos-upload {
     position: relative;
-
     display: block;
     overflow: hidden;
-
     width: 200px;
 }
 
@@ -261,10 +233,8 @@ form .item #photos-upload p {
     box-shadow: 0 2px 2px -6px #333;
     background-color: var(--secondary-color);
     color: white;
-
     width: 100%;
     text-align: center;
-
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -273,13 +243,11 @@ form .item #photos-input {
     position: absolute;
     top: 0;
     left: 0;
-
     display: block;
     overflow: hidden;
     width: 100%;
     height: 100%;
     opacity: 0;
-
     cursor: pointer;
 }
 
@@ -294,7 +262,6 @@ form .item #photos-preview {
 form .item #photos-preview img {
     width: 100%;
     height: 150px;
-
     object-fit: cover;
 }
 
@@ -306,22 +273,16 @@ form .item #photos-preview img {
     position: absolute;
     top: 0;
     left: 0;
-
     background: rgba(255,255,255,0.8);
     color:red;
-
     width: 100%;
     height: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 500%;
     cursor: pointer;
-
     transition: opacity 200ms;
-
     opacity: 0;
 }
 
@@ -337,7 +298,6 @@ form .item #photos-preview img {
 .shop .items {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-
     grid-gap: 32px;
 }
 
@@ -347,7 +307,6 @@ form .item #photos-preview img {
 
 .shop .product .image {
     padding-top: 56.25%;
-
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -369,10 +328,8 @@ form .item #photos-preview img {
 .shop .product .old-price {
     padding: 0;
     margin: 4px 0;
-
     font-size: 14px;
     color: #999;
-
     text-decoration: line-through;
 }
 
@@ -380,13 +337,11 @@ form .item #photos-preview img {
 .search-products {
     display: grid;
     grid-template-columns: 200px 1fr;
-
     margin-top: 48px;
 }
 
 .search-products .header {
     margin-bottom: 48px;
-
     font-size: 14px;
     color: #333;
 }
@@ -394,13 +349,11 @@ form .item #photos-preview img {
 .search-products .header h2{
     font-size: 26px;
     text-transform: uppercase;
-
     margin-bottom: 8px;
 }
 
 .search-products nav h4 {
     margin-bottom: 16px;
-
     color: #333;
     font-size:14px;
     text-transform: uppercase;
@@ -408,7 +361,6 @@ form .item #photos-preview img {
 
 .search-products nav ul li{
     margin: 4px 0;
-
 }
 
 .search-products nav ul li a{
@@ -419,7 +371,6 @@ form .item #photos-preview img {
     color: black;
     font-weight: bold;
 }
-
 
 /* validate errors*/
 .input .error {

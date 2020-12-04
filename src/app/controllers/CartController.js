@@ -1,5 +1,4 @@
 const Cart = require('../../lib/cart')
-
 const LoadProductsService = require('../services/LoadProductService')
 
 module.exports = { 
@@ -22,7 +21,6 @@ module.exports = {
         const { id } = req.params
 
         const product = await LoadProductsService.load('product', {where: { id }})
-
         // pegar o carrinho da sessão
         let { cart } = req.session
 
@@ -43,7 +41,6 @@ module.exports = {
         // pegar o carrinho da sessão
         let { cart } = req.session
         
-
         // se não tiver carrinho, retornar
         if (!cart) return res.redirect('/cart')
 

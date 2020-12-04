@@ -20,9 +20,7 @@ function find(filters, table) {
 const Base = {
     init({ table }) {
         if (!table) throw new Error('Invalid Params')
-
         this.table = table
-
         return this
     },
     async find(id) {
@@ -45,7 +43,6 @@ const Base = {
         try {
             let keys = [],
                 values = []
-
 
             Object.keys(fields).map(key => {
                 keys.push(key)

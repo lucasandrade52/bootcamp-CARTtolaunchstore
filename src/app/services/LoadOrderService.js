@@ -13,16 +13,13 @@ async function format(order) {
   order.buyer = await User.findOne({
       where: { id: order.buyer_id }
   })
-
   // detalhes do vendedor
   order.seller = await User.findOne({
       where: { id: order.seller_id }
   })
-
   // formatação de preço
   order.formattedPrice = formatPrice(order.price)
   order.formattedTotal = formatPrice(order.total)
-
   // formatação do status
   const statuses = {
       open: 'Aberto',
@@ -31,7 +28,6 @@ async function format(order) {
   }
 
   order.formattedStatus = statuses[order.status]
-
   // formatação de atualizado em ..
   const updatedAt = date(order.updated_at)
   order.formattedUpdatedAt = `${order.formattedStatus} em ${updatedAt.day}/${updatedAt.month}/${updatedAt.year} às ${updatedAt.hour}h${updatedAt.minutes}`

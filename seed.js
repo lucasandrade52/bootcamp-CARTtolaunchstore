@@ -24,7 +24,6 @@ async function createUsers() {
     }
 
     const usersPromise = users.map(user => User.create(user))
-
     usersIds = await Promise.all(usersPromise)
 }
 
@@ -60,7 +59,6 @@ async function createProducts() {
     const filesPromise = files.map(file => File.create(file))
 
     await Promise.all(filesPromise)
-
 }
 
 async function init() {

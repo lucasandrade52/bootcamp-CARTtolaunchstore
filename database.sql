@@ -136,6 +136,7 @@ BEFORE UPDATE ON orders
 FOR EACH ROW
 EXECUTE PROCEDURE trigger_set_timestamp();
 
+
 -- implement soft delete on products
 -- 1. Add column deleted_at as timestamp
 ALTER TABLE products ADD COLUMN "deleted_at" timestamp;

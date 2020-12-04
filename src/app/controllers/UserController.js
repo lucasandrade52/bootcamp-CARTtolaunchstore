@@ -5,7 +5,7 @@ const User = require('../models/User')
 const Product = require('../models/Product')
 const LoadProductsService = require('../services/LoadProductService')
 
-const { formatCep, formatCpfCnpj } = require('../../lib/utils')
+const { Formatcep, FormatcpfCnpj } = require('../../lib/utils')
 
 module.exports = {
     registerForm(req, res) {
@@ -15,8 +15,8 @@ module.exports = {
         try {
             const { user } = req
 
-            user.cpf_cnpj = formatCpfCnpj(user.cpf_cnpj)
-            user.cep = formatCep(user.cep)
+            user.cpf_cnpj = FormatcpfCnpj(user.cpf_cnpj)
+            user.cep = Formatcep(user.cep)
 
             return res.render('user/index', { user })
 
